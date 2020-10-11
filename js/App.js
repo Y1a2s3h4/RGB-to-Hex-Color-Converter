@@ -27,16 +27,31 @@ rangeBlue.addEventListener("input", () => {
 });
 
 redValue.addEventListener("input", () => {
-  colorOutput.style.background = `rgb(${redValue.value},${greenValue.value},${blueValue.value})`;
-  rangeRed.value = redValue.value;
+  colorOutput.style.background = `rgb(${
+    redValue.value == "" ? 0 : redValue.value
+  },${greenValue.value == "" ? 0 : greenValue.value},${
+    blueValue.value == "" ? 0 : blueValue.value
+  })`;
+  rangeRed.value = redValue.value == "" ? 0 : redValue.value;
+  rangeValueRed.textContent = rangeRed.value;
 });
 greenValue.addEventListener("input", () => {
-  colorOutput.style.background = `rgb(${redValue.value},${greenValue.value},${blueValue.value})`;
-  rangeGreen.value = greenValue.value;
+  colorOutput.style.background = `rgb(${
+    redValue.value == "" ? 0 : redValue.value
+  },${greenValue.value == "" ? 0 : greenValue.value},${
+    blueValue.value == "" ? 0 : blueValue.value
+  })`;
+  rangeGreen.value = greenValue.value == "" ? 0 : greenValue.value;
+  rangeValueGreen.textContent = rangeGreen.value;
 });
 blueValue.addEventListener("input", () => {
-  colorOutput.style.background = `rgb(${redValue.value},${greenValue.value},${blueValue.value})`;
-  rangeBlue.value = blueValue.value;
+  colorOutput.style.background = `rgb(${
+    redValue.value == "" ? 0 : redValue.value
+  },${greenValue.value == "" ? 0 : greenValue.value},${
+    blueValue.value == "" ? 0 : blueValue.value
+  })`;
+  rangeBlue.value = blueValue.value == "" ? 0 : blueValue.value;
+  rangeValueBlue.textContent = rangeBlue.value;
 });
 convert.addEventListener("click", () => {
   let r = parseInt(rangeRed.value).toString(16);
