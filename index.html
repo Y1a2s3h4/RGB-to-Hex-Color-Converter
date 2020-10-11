@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB to HEX Color Convertor</title>
+    <link rel="stylesheet" href="css/App.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center heading">RGB to HEX Color Convertor</h1>
+      <div class="form_group">
+        <div class="range_group">
+          <div>R:&nbsp; <span id="r">0</span></div>
+          <input
+            type="range"
+            id="range_R"
+            class="range"
+            min="0"
+            max="255"
+            step="1"
+            value="0"
+          />
+          <div>G:&nbsp; <span id="g">0</span></div>
+          <input
+            type="range"
+            id="range_G"
+            class="range"
+            min="0"
+            max="255"
+            step="1"
+            value="0"
+          />
+          <div>B:&nbsp; <span id="b">0</span></div>
+          <input
+            type="range"
+            id="range_B"
+            class="range"
+            min="0"
+            max="255"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div class="input_group">
+          <input
+            type="number"
+            placeholder="R"
+            id="R_value"
+            class="form-control"
+          />
+          <input
+            type="number"
+            placeholder="G"
+            id="G_value"
+            class="form-control"
+          />
+          <input
+            type="number"
+            placeholder="B"
+            id="B_value"
+            class="form-control"
+          />
+        </div>
+        <div class="text-left">Color Output:</div>
+        <div id="colorOutput"></div>
+        <center>
+          <button class="btn btn-outline-primary btn-block w-60-3">
+            Convert
+          </button>
+        </center>
+      </div>
+      <div id="result_box">
+        Converted Result:
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/App.js"></script>
+  </body>
+</html>
