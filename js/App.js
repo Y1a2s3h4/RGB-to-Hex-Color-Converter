@@ -10,6 +10,7 @@ const greenValue = document.querySelector("#G_value");
 const blueValue = document.querySelector("#B_value");
 const result = document.querySelector("#result");
 const convert = document.querySelector(".btn");
+
 rangeRed.addEventListener("input", () => {
   rangeValueRed.textContent = rangeRed.value;
   colorOutput.style.background = `rgb(${rangeRed.value},${rangeGreen.value},${rangeBlue.value})`;

@@ -47,6 +47,9 @@ input.form-control {
   text-align: center;
   margin: 2.2rem;
 }
+input.form-control-range {
+  width: auto !important;
+}
 .text-left,
 #result_box {
   margin: auto;
@@ -87,12 +90,15 @@ input.form-control {
 }
 
 @media (min-width: 280px) and (max-width: 768px) {
+  input.form-control-range {
+    width: auto !important;
+  }
   .heading {
     font-size: 1.5rem;
   }
   .range {
     transform: rotate(0deg);
-    width: 90%;
+    width: 90% !important;
   }
   .range_group {
     display: flex;
